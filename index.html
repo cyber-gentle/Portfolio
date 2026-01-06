@@ -1,59 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-       body{
-         margin: 0;
-         height: 100vh;
-         display: left;
-        /* align-items: center;
-         justify-content: left; 
-         background-color: white;
-         overflow: hidden; */
-       }
-
-     
-       h1{
-         font-family: "Archivo Black", sans-serif;
-         color: rgb(25, 19, 19);
-         font-weight: 800;
-         font-style: normal;
-        }
-
-        #mywork {
-            background-color: rgb(23, 94, 176);
-            text-align: left;
-            font-size: medium;
-            color: white;
-        }
-
-        p2 {
-           font-family: "Archivo Black", sans-serif;
-           font-weight: 800;
-           font-style: normal;
-        }    
-
-    </style>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cyber-gentle</title>
-    <link rel="icon" href="assets/favicon.jpeg" type="image/x-icon" sizes="20x20px">
+    <link rel="icon" href="assets/favicon.jpeg" type="image/x-icon">
+
+    <style>
+       #header{
+        background-color: rgb(red, green, blue);
+        color:white;
+       }
+       .container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgb(59, 117, 168);
+        border-radius: 15px;
+        padding: 1rm 0;
+       }
+       .logo{
+        font-weight: 600;
+        font-size: 20px;
+        text-transform: uppercase;
+       }
+       .nav{
+        display: flex;
+        list-style: none;
+       }
+       .nav li{
+        padding: 10px;
+        margin: 0 5px;
+        border-radius: 8px;
+       }
+       .nav li:hover{
+        background-color: rgb(213, 199, 89);
+       }
+       .nav li a{
+        text-decoration: none;
+        color:#fff;
+       }
+       .search input{
+        border-radius: 8px;
+        border: none;
+        padding: 12 20px;
+        font-size: 15px;
+        outline: none;
+       }
+       @media screen and (max-width: 566px) {
+        .search{
+            display: none;
+        }
+        .nav{
+            display: block;
+            position: absolute;
+            top: 4rem;
+            left: -200px;
+            background-color: rgba(59, 117, 168, 0.664);
+            width: 10rem;
+            text-align: center;
+            padding: 20px 0;
+            border-radius: 0 10px 10px 0;
+            transition: .5s;
+        }
+        .open{
+            left: 0;
+        }
+        
+       }
+    </style>
+    <link rel="stylsheet" href="main.js">
 </head>
+
 <body>
-    <h1>
-        Hi,I'm DAVID ABRAHAM,
-    </h1>
-    <p1>
-        ASPIRING WEB DEVELOPER <br>
-    </P1>
+    <header id="header">
+        <div class="container">
+            <div class="logo">Davab Gadgets</div>
 
-    <a id="mywork" href="my work/" > VIEW MY WORK </a> <br>
+            <ul class="nav">
+                <li><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="#"><i class="fa-solid fa-house"></i> Services</a></li>
+                <li><a href="#"><i class="fa-solid fa-house"></i> Portfolio</a></li>
+                <li><a href="#"><i class="fa-solid fa-house"></i> Products</a></li>
+                <li><a href="#"><i class="fa-solid fa-house"></i> Support</a></li>
+            </ul>
 
-    <p2>
-        PROJECTS
-    </p2>
+            <div class="search">
+                <input type="search" placeholder="search here...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
 
-    
+            <div class="toggle">
+                <i class="fa-solid fa-bars" onclick="toggle()"></i>
+            </div>
+        </div>
+    </header>
 </body>
 </html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+        h1{
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .register-form {
+          max-width: 400px;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          justify-content: center;
+        }
+        
+        .form-group {
+          display:flex;
+          flex-direction: column;
+        }
+        
+        label {
+          margin-bottom: 5px;
+          font-weight: 600;
+        }
+        
+        input {
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 6px;
+          font-size: 14px;
+        }
+        
+        input:focus {
+          outline: none;
+          border-color: #007bff;
+        }
+        
+        button {
+          padding: 12px;
+          background-color: #007bff;
+          color: white;
+          border: none;
+          border-radius: 6px;
+          font-size: 16px;
+          cursor: pointer;
+        }
+        
+        button:hover {
+          background-color: #0056b3;
+        }
+        
+        .password-wrapper {
+          position: relative;
+          display: flex;
+          align-items: center;
+          position: relative;
+          padding-right: 40px;
+          width: 100%;
+        }
+        
+        .password-wrapper input {
+          width: 100%;
+          padding-right: 40px; /* space for eye */
+        }
+        
+        .toggle-eye {
+          position: absolute;
+          right: 10px;
+          cursor: pointer;
+          font-size: 18px;
+          user-select: none;
+          opacity: 0.6;
+          transform: translateY(-50%);
+        }
+        
+        .toggle-eye:hover {
+          opacity: 1;
+        }
+        
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>Register</h1>
+
+<form class="register-form" method="post">
+  <div class="form-group">
+    <label for="fullname">Full Name</label>
+    <input
+      id="fullname"
+      type="text"
+      name="name"
+      placeholder="Enter your full name (e.g., John Doe)"
+    >
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email Address</label>
+    <input
+      id="email"
+      type="email"
+      name="E-mail"
+      placeholder="Enter your email address (e.g., johndoe@gmail.com)"
+    >
+  </div>
+
+  <div class="form-group">
+    <label for="password">Password</label>
+     <div class="password-wrapper"></div>
+     <input
+       id="password"
+       type="password"
+       name="password"
+       placeholder="Create a strong password (min. 8 characters)"
+     >
+     <span class="toggle-eye" onclick="togglePassword()">👁️</span>
+     </div>
+  </div>
+
+
+  <button type="submit">Register</button>
+</form>
+
+
+     
+
+     <!-- JavaScript -->
+  <script src="main.js"></script>
+    
+</body>
+</html>

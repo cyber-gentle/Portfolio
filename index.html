@@ -1,110 +1,135 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio — David Abraham</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio — David Abraham</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
 
-<!-- Cursor -->
-<div class="cursor" id="cursor"></div>
-<div class="cursor-ring" id="cursorRing"></div>
+    <!-- NAV -->
+    <nav id="nav">
+      <a href="#" class="nav-logo">D<span>.</span>A<span>.</span>A</a>
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <a href="contact.html" class="nav-cta">Let's Talk</a>
+      </ul>
+    </nav>
 
-<!-- NAV -->
-<nav id="nav">
-  <a href="#" class="nav-logo">D<span>.</span>A<span>.</span>A</a>
-  <ul class="nav-links">
-    <li><a href="about.html">About</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="experience.html">Experience</a></li>
-    <a href="contact.html" class="nav-cta">Let's Talk</a>
-  </ul>
-  
-</nav>
-
-<!-- HERO -->
-<section class="hero" id="home" style="padding:0;">
-  <div class="hero-left">
-    <p class="hero-tag">— Full Stack Developer</p>
-    <h1 class="hero-name">
-      David<br>
-      <em>Adahkole</em><br>
-      Abraham
-    </h1>
-    <p class="hero-desc">
-      I craft exceptional digital experiences with precision engineering and thoughtful design. Clean code, beautiful interfaces.
-    </p>
-    <div class="hero-actions">
-      <a href="projects.html" class="btn-primary"><span>View My Work</span> <span>↓</span></a>
-      <a href="#" class="btn-secondary">Download CV →</a>
-    </div>
-    <div class="hero-stats">
-      <div>
-        <div class="stat-num">50<span>+</span></div>
-        <div class="stat-label">Projects</div>
+    <!-- HERO -->
+    <section class="hero" id="home" style="padding: 0">
+      <div class="hero-left">
+        <p class="hero-tag">— Full Stack Developer</p>
+        <h1 class="hero-name">
+          David<br />
+          <em>Adahkole</em><br />
+          Abraham
+        </h1>
+        <p class="hero-desc">
+          I craft exceptional digital experiences with precision engineering and
+          thoughtful design. Clean code, beautiful interfaces.
+        </p>
+        <div class="hero-actions">
+          <a href="projects.html" class="btn-primary"
+            ><span>View My Work</span> <span>↓</span></a
+          >
+          <a href="#" class="btn-secondary">Download CV →</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="stat-num">50<span>+</span></div>
+            <div class="stat-label">Projects</div>
+          </div>
+          <div>
+            <div class="stat-num">2<span>+</span></div>
+            <div class="stat-label">Years Exp.</div>
+          </div>
+          <div>
+            <div class="stat-num">20<span>+</span></div>
+            <div class="stat-label">Happy Clients</div>
+          </div>
+        </div>
       </div>
-      <div>
-        <div class="stat-num">2<span>+</span></div>
-        <div class="stat-label">Years Exp.</div>
+      <div class="hero-right">
+        <div class="hero-img-wrap">
+          <!-- Replace with actual photo -->
+          <div
+            style="
+              width: 100%;
+              height: 100%;
+              background: linear-gradient(
+                135deg,
+                #1a1a1a 0%,
+                #2a2418 50%,
+                #1a1308 100%
+              );
+            "
+          ></div>
+          <div class="hero-img-overlay"></div>
+          <div class="hero-img-lines"></div>
+        </div>
+        <div class="hero-badge">
+          <svg
+            viewBox="0 0 110 110"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              id="circlePath"
+              d="M 55 55 m -35 0 a 35 35 0 1 1 70 0 a 35 35 0 1 1 -70 0"
+              fill="none"
+            />
+            <text
+              font-family="DM Mono, monospace"
+              font-size="8"
+              fill="#c9a84c"
+              letter-spacing="3"
+            >
+              <textPath href="#circlePath">
+                Available for Work · Open to Roles ·
+              </textPath>
+            </text>
+          </svg>
+          <div class="hero-badge-dot"></div>
+        </div>
       </div>
-      <div>
-        <div class="stat-num">20<span>+</span></div>
-        <div class="stat-label">Happy Clients</div>
+      <div class="vert-text">Scroll to Explore ↓</div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee-strip">
+      <div class="marquee-inner">
+        <div class="marquee-item">React</div>
+        <div class="marquee-item">Node.js</div>
+        <div class="marquee-item">TypeScript</div>
+        <div class="marquee-item">Next.js</div>
+        <div class="marquee-item">PostgreSQL</div>
+        <div class="marquee-item">GraphQL</div>
+        <!-- Duplicate for seamless loop -->
+        <div class="marquee-item">React</div>
+        <div class="marquee-item">Node.js</div>
+        <div class="marquee-item">TypeScript</div>
+        <div class="marquee-item">Next.js</div>
+        <div class="marquee-item">PostgreSQL</div>
+        <div class="marquee-item">GraphQL</div>
       </div>
     </div>
-  </div>
-  <div class="hero-right">
-    <div class="hero-img-wrap">
-      <!-- Replace with actual photo -->
-      <div style="width:100%;height:100%;background:linear-gradient(135deg,#1a1a1a 0%, #2a2418 50%, #1a1308 100%);"></div>
-      <div class="hero-img-overlay"></div>
-      <div class="hero-img-lines"></div>
-    </div>
-    <div class="hero-badge">
-      <svg viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path id="circlePath" d="M 55 55 m -35 0 a 35 35 0 1 1 70 0 a 35 35 0 1 1 -70 0" fill="none"/>
-        <text font-family="DM Mono, monospace" font-size="8" fill="#c9a84c" letter-spacing="3">
-          <textPath href="#circlePath">Available for Work · Open to Roles · </textPath>
-        </text>
-      </svg>
-      <div class="hero-badge-dot"></div>
-    </div>
-  </div>
-  <div class="vert-text">Scroll to Explore ↓</div>
-</section>
 
-<!-- MARQUEE -->
-<div class="marquee-strip">
-  <div class="marquee-inner">
-    <div class="marquee-item">React</div>
-    <div class="marquee-item">Node.js</div>
-    <div class="marquee-item">TypeScript</div>
-    <div class="marquee-item">Next.js</div>
-    <div class="marquee-item">PostgreSQL</div>
-    <div class="marquee-item">GraphQL</div>
-    <!-- Duplicate for seamless loop -->
-    <div class="marquee-item">React</div>
-    <div class="marquee-item">Node.js</div>
-    <div class="marquee-item">TypeScript</div>
-    <div class="marquee-item">Next.js</div>
-    <div class="marquee-item">PostgreSQL</div>
-    <div class="marquee-item">GraphQL</div>
-  </div>
-</div>
-
-
-<footer>
-  <span>© 2026 David Abraham</span>
-  <a href="#home" class="back-top">↑ Back to Top</a>
-</footer>
-
-<script>
-
-</script>
-</body>
+    <footer>
+      <span>© 2026 David Abraham</span>
+      <a href="#home" class="back-top">↑ Back to Top</a>
+    </footer>
+  </body>
 </html>
